@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	table{
+       border-collapse:collapse;
+       width:100%;
+       }
+       th{
+       background:lightblue;
+       }
+	th,td{
+    border:1px solid #000;
+    padding:5px; 
+    text-align:center;
+    }
+    #totals{
+    	background:lightgreen;
+    }
+</style>
+<script>
+   function displayTD(){
+
+        	var numbers=[222,444,666,888];
+             var z = document.getElementById('tf');
+        	for(let i=0;i<4;i++){                 	
+			var x = document.createElement('td');
+                x.textContent=numbers[i];
+                z.appendChild(x);
+            }
+        
+   }
+</script>
+</head>
+<body>
+<table>
+	<thead>
+    	<th>2015</th>
+        <th>2016</th>
+        <th>2017</th>
+        <th>2018</th>
+    </thead>
+    <tbody>
+    <tr>
+    	<td rowspan=3>111</td>
+        <td>222</td>
+        <td>333</td>
+        <td>444</td>
+     </tr>
+     <tr>
+    
+        <td>222</td>
+        <td>333</td>
+        <td>444</td>
+     </tr>
+     <tr>
+  
+        <td>222</td>
+        <td>333</td>
+        <td>444</td>
+     </tr>
+     <tr id="totals">
+     	<td colspan=4>Totals</td>
+     </tr>
+     <tfoot id='tf'>
+          <script>
+          	displayTD();
+          </script>
+     	
+     <!--
+     	<td> 222</td>
+        <td> 444</td>
+        <td>666</td>
+        <td>888</td> -->
+
+     </tfoot>
+    </tbody>
+</table>
+
+</body>
+
+
+</html>
