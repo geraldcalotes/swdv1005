@@ -16,6 +16,7 @@ body {
 	width: 100%;
 	max-width: 1020px;
 	min-width: 640px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body > header {
